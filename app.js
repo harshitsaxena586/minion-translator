@@ -1,19 +1,19 @@
 var button=document.getElementById("clickHere")
 var inputText=document.querySelector("textArea")
-var outputText=document.querySelector("output")
+var outputDiv = document.querySelector("output")
 
 function constructURL(text){
    return "https://api.funtranslations.com/translate/minion.json" + "?" + "text="+ text
 }
 
-
+outputDiv.innerText = "hello world"
 function clickHandler(){
-   // outputText.innerHTML("testing you are ")
-   var userInput= inputText.value
+
+//    var userInput= inputText.value
    
-      fetch(constructURL(userInput))
-      .then(response=> response.json())
-      .then(json=> console.log(json.contents.translated))
+//       fetch(constructURL(userInput))
+//       .then(response=> response.json())
+//       .then(json=> console.log(json.contents.translated))
 
    
 
