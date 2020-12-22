@@ -1,12 +1,12 @@
-var button=document.getElementById("clickHere")
-var inputText=document.querySelector("textArea")
-var outputDiv = document.querySelector("output")
+var button=document.querySelector("#clickHere")
+var inputText=document.querySelector("#textArea")
+var outputDiv = document.querySelector("#output")
 
 function constructURL(text){
    return "https://api.funtranslations.com/translate/minion.json" + "?" + "text="+ text
 }
 
-outputDiv.innerText = "hello world"
+outputDiv.innerText = "hellllooo"
 function clickHandler(){
 
 //    var userInput= inputText.value
