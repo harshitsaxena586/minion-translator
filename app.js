@@ -6,16 +6,17 @@ function constructURL(text){
    return "https://api.funtranslations.com/translate/minion.json" + "?" + "text="+ text
 }
 
-outputDiv.innerText = "hellllooo"
+
 function clickHandler(){
 
-//    var userInput= inputText.value
+   var userInput= inputText.value
    
-//       fetch(constructURL(userInput))
-//       .then(response=> response.json())
-//       .then(json=> console.log(json.contents.translated))
-
-   
+      fetch(constructURL(userInput))
+      .then(response=> response.json())
+      .then(json=> finalOutput=json.contents.translated
+            
+      )
+      outputDiv.innerText = finalOutput
 
 }
 button.addEventListener("click",clickHandler)
